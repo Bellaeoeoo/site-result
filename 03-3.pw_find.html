@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sign.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="logo">
+
+        <a href="01.main.html"><img src="images/logo22.png" width="240"></a>
+        </a>
+      </div>
+      <div id="container">
+        <header>
+          <div id="logo2">
+
+            <a href="02.my page.html"><img src="images/user.png" width="40"></a>
+            </a>
+          </div>
+        </header>
+        <div>
+          <ul id="topMenu">
+            <li><a href="05-1.mbti test.html">유형테스트</a>
+            <li><a href="#">커뮤니티</a>
+            <li><a href="#">친구탐색</a>
+            <li><a href="#">공지사항</a></li>
+          </ul>
+        </div>
+
+
+        <body>
+          <div id="mbti4">
+            <ul>
+              <h1>비밀번호 재설정</h1>
+            </ul>
+          </div>
+
+          <div id="container1">
+            <form>
+              <ul>
+                <li>
+                  <input type="password" id="pwd1" placeholder="  아이디" required>
+                </li>
+              </ul>
+            </form>
+
+            <div id="buttons">
+              <ul>
+                <a href="pw find finish.html"><u>확인</u></a>
+
+              </ul>
+            </div>
+
+            </form>
+          </div>
+          <div id="bottons2">
+
+            <ul>
+              <li><a href="03-2.id_find.html">아이디 찾기</a></li>
+              <li><a href="03-1.sign up.html">회원가입</a></li>
+            </ul>
+          </div>
+        </body>
+</body>
+
+
+
+<footer>
+  <div id="bottomMenu">
+    <ul>
+      <li><a href="#">서비스 소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#"><b>개인정보처리방침</b></a></li>
+    </ul>
+  </div>
+  <div id="company">
+    <h4>
+      <p>B-my</p>
+    </h4>&nbsp;
+    <p>16499 경기도 수원시 영통구 월드컵로 206 아주대학교</p>
+    <p>031-219-2114</p>
+    <p>고객센터 2022-0307 / ajou@ajou.ac.kr</p>&nbsp;
+    <p>COPYRIGHT 2022 Ajou University. All Rights Reserved.</p>&nbsp;
+  </div>
+</footer>
+</div>
+
+<script src="js/slideshow.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+  $.ajax({
+    method: "POST",
+    url: "http://3.36.4.34:8080/test",
+    data: {name:"change password"},
+    headers:{
+      Authorization :"Bearer {accessToken}"}
+  })
+    .done(function (msg) {
+      console.log(msg);
+    })
+
+</script>
+</body>
+
+</html>
